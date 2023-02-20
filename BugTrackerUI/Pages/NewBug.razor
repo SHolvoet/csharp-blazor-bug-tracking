@@ -4,6 +4,8 @@
 
 <EditForm Model="AddBug"
           OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
     <InputText @bind-value="@AddBug.Title"
                placeholder="Enter Title"/>
     <InputText @bind-value="@AddBug.Description"
